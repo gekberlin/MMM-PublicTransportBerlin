@@ -109,9 +109,11 @@ module.exports = class BvgFetcher {
           when: row.when || row.plannedWhen,
           delay: row.delay || 0,
           cancelled: row.cancelled || false,
+          prognosistype: row.prognosistype,
           name: row.line.name,
           nr: row.line.nr,
           type: row.line.product,
+          occupancy: row.occupancy,
           direction: this.config.shortenStationNames
             ? shortenStationName(row.direction)
             : row.direction

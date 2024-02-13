@@ -49,6 +49,10 @@
   text-decoration: line-through;
 }
 
+.ptb-realtime {
+  font-style: italic;
+}
+
 .ptb-marquee {
   margin: 0 auto;
   white-space: nowrap;

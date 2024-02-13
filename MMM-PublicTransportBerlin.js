@@ -392,6 +392,11 @@ Module.register("MMM-PublicTransportBerlin", {
       row.classList.add("ptb-cancelled");
     }
 
+    // Add ptb-realtime class to this row if the trip has realtime
+    if (currentDeparture.prognosistype === "calculated") {
+      row.classList.add("ptb-realtime");
+    }
+
     return row;
   },
 
